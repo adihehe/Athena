@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { EmployeeProvider, useEmployees } from "../context/EmployeeContext";
 import { HiOutlineFunnel, HiOutlineArrowDownTray } from "react-icons/hi2";
 

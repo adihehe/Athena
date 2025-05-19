@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
 import { FaSearch, FaBell, FaWrench, FaEnvelope, FaBars } from 'react-icons/fa';
 
 interface HeaderProps {
@@ -7,9 +6,7 @@ interface HeaderProps {
 }
 
 const Header = ({ title }: HeaderProps) => {
-    const { user } = useAuth();
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedFilter, setSelectedFilter] = useState('All Candidates');
 
     return (
         <header className="bg-gray-100 shadow-sm">

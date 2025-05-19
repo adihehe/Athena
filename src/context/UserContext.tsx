@@ -1,5 +1,5 @@
 // src/context/UserContext.tsx
-import React, { createContext, useContext, useState} from "react";
+import { createContext, useContext, useState} from "react";
 import type { ReactNode } from "react";
 type UserContextType = {
   name: string;

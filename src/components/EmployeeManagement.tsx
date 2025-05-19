@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaFilter, FaDownload, FaEllipsisV } from 'react-icons/fa';
+import { FaFilter, FaDownload, } from 'react-icons/fa';
 import MainLayout from '../components/MainLayout';
 import employeesData from '../data/employees.json';
 

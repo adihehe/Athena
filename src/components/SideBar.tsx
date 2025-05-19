@@ -43,7 +43,7 @@ let transitioningTo: string | null = null;
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [isPageTransitioning, setIsPageTransitioning] = useState(false);
   const location = useLocation();
 
@@ -155,7 +155,6 @@ interface SidebarContentProps {
 }
 
 const SidebarContent = ({ logout, onLinkClick }: SidebarContentProps) => {
-  const { user } = useAuth();
   
   // Group navigation items by category
   const features = navigation.filter(item => item.category === 'features');
@@ -186,7 +185,7 @@ const SidebarContent = ({ logout, onLinkClick }: SidebarContentProps) => {
               to={item.href}
               onClick={() => onLinkClick(item.href)}
               className={({ isActive }) =>
-                `group relative flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform transition-transform duration-200 ${
+                `group relative flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform  duration-200 ${
                   isActive
                     ? 'bg-yellow-400 text-black'
                     : 'text-gray-100 hover:bg-gray-800 hover:translate-x-2'
@@ -212,7 +211,7 @@ const SidebarContent = ({ logout, onLinkClick }: SidebarContentProps) => {
               to={item.href}
               onClick={() => onLinkClick(item.href)}
               className={({ isActive }) =>
-                `group relative flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform transition-transform duration-200 ${
+                `group relative flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform  duration-200 ${
                   isActive
                     ? 'bg-yellow-400 text-black'
                     : 'text-gray-100 hover:bg-gray-800 hover:translate-x-2'
@@ -233,7 +232,7 @@ const SidebarContent = ({ logout, onLinkClick }: SidebarContentProps) => {
               to={item.href}
               onClick={() => onLinkClick(item.href)}
               className={({ isActive }) =>
-                `group flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform transition-transform duration-200 ${
+                `group flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform  duration-200 ${
                   isActive
                     ? 'bg-yellow-400 text-black'
                     : 'text-gray-100 hover:bg-gray-800 hover:translate-x-2'
@@ -254,7 +253,7 @@ const SidebarContent = ({ logout, onLinkClick }: SidebarContentProps) => {
               to={item.href}
               onClick={() => onLinkClick(item.href)}
               className={({ isActive }) =>
-                `group flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform transition-transform duration-200 ${
+                `group flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors transform  duration-200 ${
                   isActive
                     ? 'bg-yellow-400 text-black'
                     : 'text-gray-100 hover:bg-gray-800 hover:translate-x-2'

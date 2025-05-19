@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setIsLoading(false);
   }, []);
 
-  const login = (name: string, email: string, password: string) => {
+  const login = (name: string, email: string,) => {
     // Mock login behavior
     setIsLoading(true);
     
