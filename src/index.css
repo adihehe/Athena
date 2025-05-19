@@ -1,7 +1,10 @@
-/* Add these to your existing CSS file */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+  overflow-y: hidden;
+}
+
 
 /* Custom color classes */
 .bg-kris-blue {
