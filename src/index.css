@@ -1,1 +1,26 @@
-@import "tailwindcss";
+/* Add these to your existing CSS file */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom color classes */
+.bg-kris-blue {
+  background-color: #1a73e8;
+}
+
+.text-kris-blue {
+  color: #1a73e8;
+}
+
+.border-kris-blue {
+  border-color: #1a73e8;
+}
+
+/* Optional: Add a hover state for the custom blue */
+.hover\:bg-kris-blue:hover {
+  background-color: #1a73e8;
+}
+
+.hover\:text-kris-blue:hover {
+  color: #1a73e8;
+}

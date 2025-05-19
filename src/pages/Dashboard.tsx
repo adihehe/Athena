@@ -1,27 +1,32 @@
-import { Sidebar } from '../components/SideBar';
-import { Header } from '../components/Header';
+import MainLayout from '../components/MainLayout';
 import { DashboardCards } from '../components/DashBoardCards';
 import { AppliedJobs } from '../components/AppliedJobs';
-import { Candidates } from '../components/Candidates';
 import { Employees } from '../components/Employees';
+import { Candidates } from '../components/Candidates';
 import { Payrolls } from '../components/Payrolls';
+import { DashboardProvider } from '../context/DashBoardContext';
 
-const DashboardPage = () => {
+// Dashboard component implementation
+const Dashboard = () => {
   return (
-    <div className="flex h-screen">
-      <Sidebar />
-      <div className="flex-1 overflow-auto">
-        <Header />
+    <DashboardProvider>
+      <MainLayout title="Dashboard">
+        {/* Stat Cards */}
         <DashboardCards />
-        <div className="grid grid-cols-2 gap-4 p-4">
+        
+        {/* Two-column layout for dashboard widgets */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
           <AppliedJobs />
           <Employees />
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6 mb-6">
           <Candidates />
           <Payrolls />
         </div>
-      </div>
-    </div>
+      </MainLayout>
+    </DashboardProvider>
   );
 };
 
-export default DashboardPage;
+export default Dashboard;

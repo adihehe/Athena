@@ -1,10 +1,11 @@
-// src/components/LoginForm.tsx
 import React, { useState } from "react";
 import { useUser } from "../context/UserContext";
+import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const { setName } = useUser();
+  const { login } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -12,9 +13,11 @@ const LoginForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     localStorage.setItem("email", email);
-    localStorage.setItem("name", email.split("@")[0]); // mock name
-    setName(email.split("@")[0]);
-    navigate("/dashboard"); // navigate to next page
+    const name = email.split("@")[0]; // mock name
+    localStorage.setItem("name", name); 
+    setName(name);
+    login(name, email, password);
+    // No need to navigate here since login function in AuthContext will handle it
   };
 
   return (
@@ -26,7 +29,7 @@ const LoginForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+          className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
       <div>
@@ -36,12 +39,12 @@ const LoginForm = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+          className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded-md"
+        className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors"
       >
         Sign In
       </button>
