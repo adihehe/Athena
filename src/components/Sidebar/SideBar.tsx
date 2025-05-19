@@ -14,7 +14,7 @@ import {
   FaMoneyBillWave,
   FaSignOutAlt
 } from 'react-icons/fa';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 
 // Define navigation item types
 type NavigationItem = {
@@ -167,10 +167,10 @@ const SidebarContent = ({ logout, onLinkClick }: SidebarContentProps) => {
       {/* User profile */}
       <div className="flex flex-col items-center justify-center px-4 pt-8 pb-6">
         <div className="relative rounded-full h-20 w-20 bg-yellow-400 flex items-center justify-center mb-3 overflow-hidden border-4 border-yellow-500">
-          <img src="/avatars/admin.png" alt="Admin" className="w-full h-full object-cover" />
+          <img src="https://picsum.photos/seed/profile-layout/800/600" alt="Admin" className="w-full h-full object-cover" />
         </div>
         <div className="text-center">
-          <h2 className="text-xl font-bold">KRIS Admin</h2>
+          <h2 className="text-xl font-bold">{localStorage.getItem('name')}</h2>
           <p className="text-sm text-gray-300">Admin</p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useDashboard } from "../context/DashBoardContext";
+import { useDashboard } from "../../context/DashBoardContext";
 import { FaEllipsisV, FaEye } from "react-icons/fa";
 
 export const Candidates = () => {

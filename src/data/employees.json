@@ -1,79 +1,42 @@
 [
   {
-    "id": 1,
-    "name": "John Steven Doe",
-    "email": "john.doe@company.com",
-    "role": "UI UX Designer",
-    "department": "Design",
-    "startDate": "28/04/2022",
-    "category": "Full time",
-    "gender": "Male",
-    "status": "Active"
+    "id": "1",
+    "name": "John Doe",
+    "jobTitle": "Product Manager",
+    "startDate": "2023-01-15",
+    "category": "Management",
+    "gender": "Male"
   },
   {
-    "id": 2,
-    "name": "Barry Jhayson",
-    "email": "barry.j@company.com",
-    "role": "Backend Engineer",
-    "department": "IT",
-    "startDate": "28/04/2022",
-    "category": "Remote",
-    "gender": "Male",
-    "status": "Active"
+    "id": "2",
+    "name": "Jane Smith",
+    "jobTitle": "UI/UX Designer",
+    "startDate": "2022-11-01",
+    "category": "Design",
+    "gender": "Female"
   },
   {
-    "id": 3,
-    "name": "Tiwa Cavage",
-    "email": "tiwa.c@company.com",
-    "role": "UI UX Designer",
-    "department": "Design",
-    "startDate": "28/04/2022",
-    "category": "Full time",
-    "gender": "Female",
-    "status": "Active"
+    "id": "3",
+    "name": "Alex Johnson",
+    "jobTitle": "Software Engineer",
+    "startDate": "2024-03-20",
+    "category": "Engineering",
+    "gender": "Other"
   },
   {
-    "id": 4,
-    "name": "James IDK",
-    "email": "james.idk@company.com",
-    "role": "UI UX Designer",
-    "department": "Design",
-    "startDate": "28/04/2022",
-    "category": "Full time",
-    "gender": "Male",
-    "status": "Active"
+    "id": "4",
+    "name": "Emily Davis",
+    "jobTitle": "Data Analyst",
+    "startDate": "2021-09-10",
+    "category": "Analytics",
+    "gender": "Female"
   },
   {
-    "id": 5,
-    "name": "Vanessa Chidi",
-    "email": "vanessa.c@company.com",
-    "role": "UI UX Designer",
-    "department": "Design",
-    "startDate": "28/04/2022",
-    "category": "Full time",
-    "gender": "Female",
-    "status": "Inactive"
-  },
-  {
-    "id": 6,
-    "name": "Don Gorgon",
-    "email": "don.g@company.com",
-    "role": "UI UX Designer",
-    "department": "Design",
-    "startDate": "28/04/2022",
-    "category": "Full time",
-    "gender": "Male",
-    "status": "Active"
-  },
-  {
-    "id": 7,
-    "name": "Sarah Wilson",
-    "email": "sarah.w@company.com",
-    "role": "UI UX Designer",
-    "department": "Design",
-    "startDate": "28/04/2022",
-    "category": "Full time",
-    "gender": "Female",
-    "status": "Active"
+    "id": "5",
+    "name": "Michael Brown",
+    "jobTitle": "DevOps Engineer",
+    "startDate": "2023-06-05",
+    "category": "Engineering",
+    "gender": "Male"
   }
 ]

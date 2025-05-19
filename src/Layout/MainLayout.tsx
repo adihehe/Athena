@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import Sidebar from './SideBar';
-import Header from './Header';
+import Sidebar from '../components/Sidebar/SideBar';
+import Header from '../components/Header/Header';
 
 interface MainLayoutProps {
   children: ReactNode;

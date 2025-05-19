@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { DashboardCards } from '../components/DashBoardCards';
-import { AppliedJobs } from '../components/AppliedJobs';
-import { Employees } from '../components/Employees';
-import { Candidates } from '../components/Candidates';
-import { Payrolls } from '../components/Payrolls';
+import { DashboardCards } from '../components/dashboardcomponets/DashBoardCards';
+import { AppliedJobs } from '../components/dashboardcomponets/AppliedJobs';
+import { Employees } from '../components/dashboardcomponets/Employees';
+import { Candidates } from '../components/dashboardcomponets/Candidates';
+import { Payrolls } from '../components/dashboardcomponets/Payrolls';
 import { DashboardProvider } from '../context/DashBoardContext';
 
 const Dashboard = () => {

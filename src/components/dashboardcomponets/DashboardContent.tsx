@@ -1,4 +1,4 @@
-import { DashboardCards } from './DashBoardCards';
+import { DashboardCards } from './Header/DashBoardCards';
 import { AppliedJobs } from './AppliedJobs';
 import { Employees } from './Employees';
 import { Candidates } from './Candidates';
