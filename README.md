@@ -88,24 +88,20 @@ athena/
 📋 How to Run
 Clone the repository
 
-bash
-Copy
-Edit
-git clone <your-repo-url>
-cd <project-directory>
+```bash
+git clone https://github.com/adihehe/Athena.git
+cd athena
 Install dependencies
+```
 
-bash
-Copy
-Edit
+```bash
 npm install
 Start the development server
+```
 
-bash
-Copy
-Edit
+```bash
 npm run dev
-
+```
 
 View in browser
 Navigate to: https://athena-vpqx.vercel.app/
